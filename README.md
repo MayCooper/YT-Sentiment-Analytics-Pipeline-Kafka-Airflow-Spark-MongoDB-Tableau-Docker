@@ -27,29 +27,35 @@ The pipeline is composed of several integrated components, each responsible for 
    Kafka serves as the backbone of the data streaming process, enabling real-time ingestion and transmission of comments to the processing component. It ensures that the data flows smoothly through the pipeline and can handle large-scale data ingestion without bottlenecks.
 
    ![image](https://github.com/user-attachments/assets/3012b8de-9e5c-48b3-bd7a-79f0cb5ec76a)
+   ![image](https://github.com/user-attachments/assets/e621852a-bb3b-4ef8-aa6e-057886179e76)
+   ![image](https://github.com/user-attachments/assets/87b15c33-fe0e-4823-a8e5-49f80b22838d)
 
-3. **Apache Airflow**  
+
+4. **Apache Airflow**  
    Airflow orchestrates the entire workflow, managing task dependencies, scheduling, and monitoring the execution of each stage in the pipeline. It provides a clear and user-friendly interface to manage and monitor the pipeline's operations.
 
    ![image](https://github.com/user-attachments/assets/f599d395-80e1-4893-84ac-42b0ba22b20f)
    ![image](https://github.com/user-attachments/assets/3baa6d12-40ac-429a-9ec9-32727e534d51)
+   ![image](https://github.com/user-attachments/assets/9a866327-504f-44f2-ae6e-fc3c61a5fb1f)
+   ![image](https://github.com/user-attachments/assets/bc693e10-bb97-4d69-8e06-2fc0ed8559f9)
 
-4. **Apache Spark**  
+
+5. **Apache Spark**  
    Spark is employed for distributed data processing, enabling the pipeline to handle large datasets efficiently. Spark processes the comments in parallel, performing necessary transformations and sentiment analysis at scale.
 
-5. **Sentiment Analysis with Python**  
+6. **Sentiment Analysis with Python**  
    Leveraging Python's powerful natural language processing libraries, the pipeline performs sentiment analysis on the fetched comments. Each comment is analyzed and categorized based on its sentiment, providing a quantitative measure of audience reactions.
 
    ![image](https://github.com/user-attachments/assets/8aa4267f-7064-486a-b5ac-69d06ddcd5af)
    ![image](https://github.com/user-attachments/assets/b444b5b3-3a44-442d-af48-30a79947bd29)
 
-6. **MongoDB**  
+7. **MongoDB**  
    As a NoSQL database, MongoDB is used to store the processed comments and their associated sentiment scores. It offers flexibility in handling unstructured data and provides efficient querying capabilities for subsequent analysis.
 
    ![image](https://github.com/user-attachments/assets/05e27863-fa7b-4fee-b037-42beb9dd1493)
    ![image](https://github.com/user-attachments/assets/c913933b-6f39-417f-871e-ebf58f745f5c)
 
-7. **Docker Setup**  
+8. **Docker Setup**  
    Docker is used to containerize the core components of the pipeline, ensuring that the environment is consistent across different deployments and making it easier to manage dependencies. The following steps outline how to set up Docker for this project:
 
    ![image](https://github.com/user-attachments/assets/5b38d86a-67c0-4d21-a317-3d4fa158c80f)
@@ -97,7 +103,7 @@ The pipeline is composed of several integrated components, each responsible for 
 
    By containerizing the pipeline's components, Docker ensures that the environment remains consistent across different development and production environments. This simplifies deployment and makes it easier to manage dependencies and configurations.
 
-8. **Tableau**  
+9. **Tableau**  
    Tableau is used to visualize the results of the sentiment analysis. By connecting Tableau to MongoDB, users can create dashboards and reports that illustrate sentiment trends across videos, time periods, or other dimensions of interest.
 
 ![image](https://github.com/user-attachments/assets/9caa48cf-bc25-41e2-8e25-506140b1c201)
