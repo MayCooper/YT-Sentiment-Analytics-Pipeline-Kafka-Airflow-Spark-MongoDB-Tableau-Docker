@@ -100,7 +100,7 @@ The pipeline is composed of several integrated components, each responsible for 
 8. **Tableau**  
    Tableau is used to visualize the results of the sentiment analysis. By connecting Tableau to MongoDB, users can create dashboards and reports that illustrate sentiment trends across videos, time periods, or other dimensions of interest.
 
-![image](https://github.com/user-attachments/assets/478b0ddf-14bd-4da4-ad38-6317abf6483b)
+![image](https://github.com/user-attachments/assets/9caa48cf-bc25-41e2-8e25-506140b1c201)
 ![image](https://github.com/user-attachments/assets/835727a8-a896-42da-a87b-d2e8b44517ce)
 ![image](https://github.com/user-attachments/assets/25419716-8e07-4323-9b1e-e6ae1a04274d)
 
